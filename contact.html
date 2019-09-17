@@ -4,63 +4,60 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="Interior design studio based in Stockholm.">
         <link rel="stylesheet" type="text/css" href="styles.css">
         <title>Lorem Ipsum Contact</title>
     </head>
     <body>
         <header class="header">
             <div class="logo">
-                <img class="logo" src="images/logo2.png" alt="logo">
+                <h1 class="logo-h1">LOREM IPSUM</h1>
+                <h4 class="logo-h4">Interior Design</h4>
             </div>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="gallery.html">Work</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="other.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            
         </header>
+
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html">Home</a></li>
+                <li class="nav-item">
+                    <a href="gallery.html">Work</a></li>
+                <li class="nav-item">
+                    <a href="other.html">About</a></li>
+                <li class="nav-item current">
+                    <a href="contact.html">Contact</a></li>
+            </ul>
+            <img id="hamburger" src="images/hamburger.png" alt="hamburger-menu">
+        </nav>
+            
         <main class="main">
-            <h2>Do you have a question?</h2>
-            <form action="mailto:emma.ekman@hotmail.com" method="post">
-                <label>Name:</label><br>
-                <input type="text" name="name" size="30" required><br>
-                <label>Email:</label><br>
-                <input type="email" name="email" size="30" required><br>
-                <label>Subject:</label><br>
-                <input type="subject" name="subject" size="30" required><br>
-                <label>Message:</label><br>
+            <h2 class="h2-contact">Do you have a question?</h2>
+            <form action="mailto:emma.ekman@hotmail.com" method="get">
+                <label>Name:</label>
+                <input type="text" name="name" size="30" required>
+                <label>Email:</label>
+                <input type="email" name="email" size="30" required>
+                <label>Subject:</label>
+                <input type="text" name="subject" size="30" required>
+                <label>Message:</label>
                 <textarea name="message" cols="45" rows="5" placeholder="Write here..." required></textarea>
-                <input type="submit" value="Send"><!--gör till button?-->
+                <input type="submit" value="Send">
             </form>
             <p class="form-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sapiente quis, cumque iste assumenda labore tempore nulla eum ullam nihil! Ea nobis provident inventore commodi dolorem sapiente itaque, consectetur corporis.</p>
         </main>
         <footer>
             <div class="footer">
                 <div class="item map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2035.1511537677254!2d18.0628555508086!3d59.330430217887404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d5ef9051701%3A0x1b27c57113edf189!2sDrottninggatan%2022%2C%20111%2051%20Stockholm!5e0!3m2!1ssv!2sse!4v1568059906916!5m2!1ssv!2sse" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>                    
-                        <p>Lorem ipsum<br>Drottninggatan 22<br>35232 Stockholm<br>+46 76 190 08 38</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2035.1511537677254!2d18.0628555508086!3d59.330430217887404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d5ef9051701%3A0x1b27c57113edf189!2sDrottninggatan%2022%2C%20111%2051%20Stockholm!5e0!3m2!1ssv!2sse!4v1568059906916!5m2!1ssv!2sse" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>                    
+                    <p>Lorem ipsum<br>Drottninggatan 22<br>35232 Stockholm<br>+46 76 190 08 38</p>
                 </div>
                 <div class="item social">
                     <a href="http://www.facebook.com" target="_blank">
-                        <img id="facebook" src="images/facebook.png" alt="facebook">
-                    </a>
+                        <img id="facebook" src="images/facebook.png" alt="facebook"></a>
                     <a href="http://www.instagram.com" target="_blank">
-                        <img id="insta" src="images/instagram.png" alt="instagram">
-                    </a>
+                        <img id="insta" src="images/instagram.png" alt="instagram"></a>
                     <a href="http://www.twitter.com" target="_blank">
-                        <img id="linkedin" src="images/twitter.png" alt="linkedin">
-                    </a>
+                        <img id="twitter" src="images/twitter.png" alt="twitter"></a>
                 </div>
             </div>
         </footer>
