@@ -61,7 +61,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
 }
-.nav img {
+#hamburger {
     display: none;
     width: 30px;
     height: 30px;
@@ -102,8 +102,10 @@ a:hover {
 .content {
     grid-row: 1;
     grid-column: 5 / 8;
+    font-size: 14px;
 }
 .content h1 {
+    text-align: center;
     font-size: 20px;
 }
 
@@ -112,11 +114,11 @@ a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 100%;
     grid-row: 2;
     grid-column: 2 / 8;
-    grid-gap: 10px;
+    grid-gap: 5px;
 }
 .box {
     width: 240px;
@@ -129,6 +131,7 @@ a:hover {
 }
 .h2-news {
     grid-row: 2;
+    text-align: center;
     font-size: 20px;
     margin-top: 20px;
 }
@@ -199,7 +202,7 @@ iframe {
 h2 {
     margin-top: 0px;
     grid-row: 1;
-    grid-column: 2 / 7;
+    grid-column: 2 / 8;
 }
 form {
     grid-row: 1;
@@ -232,6 +235,7 @@ input[type=submit] {
 }
 input[type=submit]:hover {
     background-color: rgb(71, 78, 72);
+    color: rgb(255, 255, 255);
 }
 textarea {
     width: 100%;
@@ -317,19 +321,25 @@ textarea {
     margin-bottom: 30px;
     text-align: center;
 }
+.about p {
+    font-size: 14px;
+}
 
 @media only screen and (max-width: 768px) {
-    .logo-h1 {
-        max-width: 100%;
-        font-size: 80px;
+    .h1-logo {
+        font-size: 100%;
     }
-    .nav .nav-list .nav-item {
-      display: none;
+    .nav-list {
+        align-content: center;
     }
-    .nav #hamburger {
+    .nav-item {
+        display: none;
+        align-content: center;
+        justify-content: center;
+    }
+    #hamburger {
         display: block;
-        margin-right: 50%;
-        margin-left: 40%;
+        margin-right: 45%;
     }
     .home {
         grid-gap: 0;
@@ -347,6 +357,10 @@ textarea {
     .content h2 {
         text-align: center;
         margin-top: 50px;
+    }
+    .news {
+        justify-content: center;
+        grid-gap: 5px;
     }
     .form-text {
         grid-row: 2;
@@ -378,6 +392,7 @@ textarea {
         width: 100%;
     }
     .content-about-pella {
+        margin-top: 30px;
         grid-column: 1;
         grid-row: 3;
         align-self: center;
@@ -389,6 +404,7 @@ textarea {
         width: 100%;
     }
     .content-about-nina {
+        margin-top: 30px;
         grid-column: 1;
         grid-row: 5;
         align-self: center;
@@ -399,19 +415,23 @@ textarea {
         grid-row: 6;
         width: 100%;
     }
-    h2 {
+    .h2-contact {
         font-size: 17px;
-        grid-column: 2 / 8;
     }
-    .news {
-        justify-content: center;
-        grid-gap: 5px;
+    .logo-h1 {
+        text-align: center;
+        font-size: 80px; 
     }
-    .h2-news {
+    .logo-h4 {
+        font-size: 18px;
+    }
+    .footer p {
+        float: none;
         text-align: center;
     }
-    .h1-portfolio {
-        font-size: 20px;
+    .overlay {
+        background-color: rgba(255, 255, 255, 0);
+        opacity: 1;
     }
 }
 @media only screen and (max-width: 992px) {
@@ -430,26 +450,19 @@ textarea {
         grid-column: 1;
     }
     .content h1 {
-        text-align: center;
         margin-top: 50px;
     }    
     .news {
         justify-content: center;        
         grid-gap: 5px;
     }
-    h2 {
-        font-size: 17px;
-        grid-column: 2 / 8;
+    .overlay {
+        background-color: rgba(255, 255, 255, 0);
+        opacity: 1;
     }
-    h1 {
-        font-size: 17px;
-        grid-column: 2 / 8;
+    .gallery-item:hover .overlay {
+        opacity: 1;
     }
-    .h2-news {
-    text-align: center;
-    }
-
-  
 }
 
 
